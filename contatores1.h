@@ -6,7 +6,6 @@ void K1 (int estado);
 int K1status (void);
 void K2 (int estado);
 void K3 (int estado);
-void botoes_init(void);
 int s1(void);
 int s0(void);
 

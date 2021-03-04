@@ -12,28 +12,75 @@
 #include "delay.h"
 #include "display.h"
 
-char vetor [16] = { 0x3F, 0x06, 0X5B, 0x4F, 0x66, 0x6D, 0x7D, 0x07,
-                    0x7F, 0x6F, 0x77, 0x7C, 0x39, 0x5E, 0x79, 0x71 };
 
-void main(void) {
-    
+
+void main(void) 
+
+{
+{
     int cont = 0;
-    char estado = 0;
-    display7seg_init();
-    botoes_init();
-    contatores_init();
+    int estado = 0;
+    int t;
+    
     
      while ( 1 )
     {
         switch ( estado )
         {
             case 0:
-                if ( s1() == 1 )
-                   ( s1() == 1 && K1status() == 0)
-                           estado = 1;
-                break;
-                        
+                    estado = 1;
+                    break;
             case 1:
+                    contatores_init();
+                    display7seg_init();
+                    estado = 2;
+                    break;
+            case 2:
+                    if ( s1() == 1 && K1status() == 0 )
+                        estado = 3;
+                    break;
+            case 3:
+                    K1(1);
+                    K2(1);
+                    K3(0);
+                    estado = 4;
+                    break;
+            case 4:
+                    t = 3000;
+                    estado = 6;
+                    break;
+            case 6:
+                    delay(1);
+                    --t;
+                    if (t <= 0 )
+                        estado = 7;
+                    if( s0() == 1 )
+                        estado = 9;
+                    break;
+            case 7:
+                    ++cont;
+                    estado = 8;
+                    break;
+            case 8:
+                    K1(1);
+                    K2(0);
+                    K3(1);
+                    if( s0() == 1 )
+                        estado = 9;
+                    break;
+            case 9:
+                    K1(0);
+                    K2(0);
+                    K3(0);
+                    estado = 2;
+                    break;
+        }      
+        display7seg( cont );
+        
+        if ( cont >= 10)
+            cont = 0;
+        }
+                   
                 
         }
    

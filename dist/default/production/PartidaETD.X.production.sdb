@@ -1,0 +1,133 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 6 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 C:\Users\20185307\MPLABXProjects\PartidaETD.X\contatores1.c
+[v _contatores_init contatores_init `(v  1 e 1 0 ]
+"22
+[v _K1 K1 `(v  1 e 1 0 ]
+"27
+[v _K2 K2 `(v  1 e 1 0 ]
+"32
+[v _K3 K3 `(v  1 e 1 0 ]
+"37
+[v _K1status K1status `(i  1 e 2 0 ]
+"41
+[v _s1 s1 `(i  1 e 2 0 ]
+"45
+[v _s0 s0 `(i  1 e 2 0 ]
+"14 C:\Users\20185307\MPLABXProjects\PartidaETD.X\delay.c
+[v _delay delay `(v  1 e 1 0 ]
+"17 C:\Users\20185307\MPLABXProjects\PartidaETD.X\display.c
+[v _display7seg_init display7seg_init `(v  1 e 1 0 ]
+"24
+[v _display7seg display7seg `(v  1 e 1 0 ]
+"17 C:\Users\20185307\MPLABXProjects\PartidaETD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"228 C:\Program Files (x86)\Microchip\xc8\v2.00\pic\include\pic16f887.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S105 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+"369
+[u S114 . 1 `S105 1 . 1 0 ]
+[v _PORTDbits PORTDbits `VES114  1 e 1 @8 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S84 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"1619
+[u S93 . 1 `S84 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES93  1 e 1 @136 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"14 C:\Users\20185307\MPLABXProjects\PartidaETD.X\display.c
+[v _vetor vetor `[16]uc  1 e 16 0 ]
+"17 C:\Users\20185307\MPLABXProjects\PartidaETD.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"22
+[v main@estado estado `i  1 a 2 8 ]
+"21
+[v main@cont cont `i  1 a 2 6 ]
+"23
+[v main@t t `i  1 a 2 4 ]
+"87
+} 0
+"41 C:\Users\20185307\MPLABXProjects\PartidaETD.X\contatores1.c
+[v _s1 s1 `(i  1 e 2 0 ]
+{
+"44
+} 0
+"45
+[v _s0 s0 `(i  1 e 2 0 ]
+{
+"48
+} 0
+"17 C:\Users\20185307\MPLABXProjects\PartidaETD.X\display.c
+[v _display7seg_init display7seg_init `(v  1 e 1 0 ]
+{
+"22
+} 0
+"24
+[v _display7seg display7seg `(v  1 e 1 0 ]
+{
+[v display7seg@c c `i  1 p 2 0 ]
+"27
+} 0
+"14 C:\Users\20185307\MPLABXProjects\PartidaETD.X\delay.c
+[v _delay delay `(v  1 e 1 0 ]
+{
+[v delay@t t `i  1 p 2 0 ]
+"21
+} 0
+"12 C:\Users\20185307\MPLABXProjects\PartidaETD.X\contatores1.c
+[v _contatores_init contatores_init `(v  1 e 1 0 ]
+{
+"20
+} 0
+"32
+[v _K3 K3 `(v  1 e 1 0 ]
+{
+[v K3@estado estado `i  1 p 2 0 ]
+"35
+} 0
+"27
+[v _K2 K2 `(v  1 e 1 0 ]
+{
+[v K2@estado estado `i  1 p 2 0 ]
+"30
+} 0
+"37
+[v _K1status K1status `(i  1 e 2 0 ]
+{
+"40
+} 0
+"22
+[v _K1 K1 `(v  1 e 1 0 ]
+{
+[v K1@estado estado `i  1 p 2 0 ]
+"25
+} 0
